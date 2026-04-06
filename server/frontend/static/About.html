@@ -1,74 +1,82 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <!-- Link the style sheet here -->
   <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="/static/bootstrap.min.css">
-
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      <h1>About Us</h1>
-      Welcome to Best Cars dealership, home to the best cars in North America. We deal in selling domestic and imported cars at reasonable prices.
-    
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
+    <div class="card" style="width: 80%; margin: auto; margin-top:5%; border: none;">
+      <div class="banner" name="about-header" style="text-align: center; padding: 20px;">
+        <h1>About Us</h1>
+        <p style="color: grey;">
+          Welcome to Best Cars dealership, a premier automotive destination with branches spanning across the United States. Committed to excellence, we pride ourselves on providing top-tier customer service, a vast selection of quality vehicles, and an unwavering dedication to meeting the diverse automotive needs of our valued customers nationwide. At each of our locations, our team is driven by a passion for delivering exceptional experiences, making us your trusted partner on the road to automotive satisfaction.
+        </p>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+      <div style="display: flex; justify-content: space-around; margin-top: 30px;">
+        <!-- Membre 1 : CEO -->
+        <div class="card" style="width: 30%; text-align: center; border: none;">
+          <img class="card-img-top" src="/static/person.png" alt="Jane Wilbur" style="width: 100%;">
+          <div class="card-body">
+            <div style="background-color: #6f42c1; color: white; padding: 5px; margin-bottom: 10px;">CEO</div>
+            <h5 class="card-title">Jane Wilbur</h5>
+            <p class="card-text" style="font-size: 0.9rem;">
+              Jane steers the business towards success with strategic leadership, cultivating a customer-centric environment for automotive excellence.
+            </p>
+            <p style="color: grey; font-size: 0.8rem;">janew@bestcars.com</p>
+          </div>
+        </div>
+
+        <!-- Membre 2 : CMO -->
+        <div class="card" style="width: 30%; text-align: center; border: none;">
+          <img class="card-img-top" src="/static/person.png" alt="Emma Cook" style="width: 100%;">
+          <div class="card-body">
+            <div style="background-color: #6f42c1; color: white; padding: 5px; margin-bottom: 10px;">CMO</div>
+            <h5 class="card-title">Emma Cook</h5>
+            <p class="card-text" style="font-size: 0.9rem;">
+              Emma orchestrates innovative marketing campaigns, driving brand visibility and consumer engagement, shaping the company's narrative in the competitive landscape.
+            </p>
+            <p style="color: grey; font-size: 0.8rem;">emmac@bestcars.com</p>
+          </div>
+        </div>
+
+        <!-- Membre 3 : CFO -->
+        <div class="card" style="width: 30%; text-align: center; border: none;">
+          <img class="card-img-top" src="/static/person.png" alt="Enak White" style="width: 100%;">
+          <div class="card-body">
+            <div style="background-color: #6f42c1; color: white; padding: 5px; margin-bottom: 10px;">CFO</div>
+            <h5 class="card-title">Enak White</h5>
+            <p class="card-text" style="font-size: 0.9rem;">
+              Enak oversees the financial health of the company, leveraging astute financial strategies to optimize resources and ensure fiscal responsibility for sustained growth.
+            </p>
+            <p style="color: grey; font-size: 0.8rem;">enakw@bestcars.com</p>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
-</div>
-
+  </div>
+</body>
 </html>
